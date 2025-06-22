@@ -29,7 +29,7 @@ function Form() {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-xs sm:text-sm md:text-lg rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500 outline-none"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-base sm:text-base md:text-lg rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500 outline-none"
           placeholder="Name"
           required
         />
@@ -40,7 +40,7 @@ function Form() {
           value={roomId}
           onChange={(e) => setRoomId(e.target.value)}
           placeholder="Room ID"
-          className="bg-gray-50 md:text-lg border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500 outline-none"
+          className="bg-gray-50 md:text-lg border border-gray-300 text-gray-900 text-base sm:text-base rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500 outline-none"
           required
         />
         <button
