@@ -1,12 +1,74 @@
-# React + Vite
+# 💻 CODEWAVE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p id="description">**Codewave** is a real-time collaborative code editor that supports multiple programming languages. It allows users to join rooms and write code together, instantly syncing changes across all connected clients.
+</p>
 
-Currently, two official plugins are available:
+<h2>🧐 Features</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🧑‍💻 Real-time collaborative code editing
+- 🌐 Multiple language support
+- 👥 Room-based session management
+- ⚡ Built with WebSockets (Socket.IO) for low-latency updates
 
-## Expanding the ESLint configuration
+<h2>🛠️ Installation Steps:</h2>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<p>1. Clone the repository:</p>
+
+```
+git clone https://github.com/umairrkhan009/codewave.git
+```
+
+<p>2. Navigate to the project directory:</p>
+
+```
+cd codewave
+```
+
+<p>3. Install dependencies:</p>
+
+```
+npm install
+```
+
+<p>4. Start the application:</p>
+
+In one terminal, start backend server:
+
+```
+cd server
+node index.js
+```
+
+In other terminal, start frontend with Vite:
+
+```
+npm run dev
+```
+
+<h2>🍰 Contribution Guidelines:</h2>
+Feel free to contribute to this project.
+
+If you want to contribute to the project, please follow these steps:
+
+Fork the repository.
+
+1. Create a new branch (git checkout -b feature-branch).
+2. Make your changes.
+3. Commit your changes (git commit -am 'Add new feature').
+4. Push to the branch (git push origin feature-branch).
+5. Create a pull request.
+
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+- Frontent - HTML CSS JavaScript React TailwindCSS
+- Backend - Node.js Express.js
+- WebSocket - Socket.io
+
+<h2>🛡️ License:</h2>
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+<h2>Contact</h2>
+Feel free to contact me at umairrkhhan009@gmail.com if you have any suggestions/feedback.
