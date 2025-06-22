@@ -20,13 +20,16 @@ function Form() {
   }
 
   return (
-    <form className="w-[40%] mt-10" onSubmit={handleSubmit}>
+    <form
+      className="w-[50%] lg:w=[40%] mt-5 sm:mt-7 lg:mt-10"
+      onSubmit={handleSubmit}
+    >
       <div className="mb-5">
         <input
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500 outline-none"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-xs sm:text-sm md:text-lg rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500 outline-none"
           placeholder="Name"
           required
         />
@@ -37,13 +40,13 @@ function Form() {
           value={roomId}
           onChange={(e) => setRoomId(e.target.value)}
           placeholder="Room ID"
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500 outline-none"
+          className="bg-gray-50 md:text-lg border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-violet-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500 outline-none"
           required
         />
         <button
           onClick={() => setRoomId(crypto.randomUUID().slice(0, 4))}
           type="button"
-          className="absolute right-1 top-1 bottom-1 text-sm pr-2 cursor-pointer text-gray-400 hover:text-gray-200"
+          className="absolute right-1 top-1 bottom-1 text-xs sm:text-sm pr-2 cursor-pointer text-gray-400 hover:text-gray-200"
         >
           Generate
         </button>

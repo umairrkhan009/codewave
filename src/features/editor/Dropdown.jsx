@@ -31,14 +31,14 @@ function Dropdown({ options }) {
   }
 
   return (
-    <div className="px-6 py-2 h-[6rem] flex items-center justify-between w-full bg-zinc-700 ">
-      <div className="flex flex-row items-center justify-center m-2 w-full">
+    <div className="px-6 h-[4rem] sm:h-[5rem] flex items-center justify-between w-full bg-zinc-700 ">
+      <div className="flex flex-row items-center justify-center m-2 w-full scale-70 sm:scale-80 md:scale-100">
         <AnimatedTooltip items={users} />
       </div>
 
       <select
         value={language}
-        className="capitalize outline-none border-none bg-zinc-500 px-3 py-2 rounded-lg"
+        className="capitalize text-xs md:text-sm outline-none border-none bg-zinc-500 px-3 py-2 rounded-lg"
         onChange={handleChange}
       >
         {options.map((option) => {

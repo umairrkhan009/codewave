@@ -62,15 +62,19 @@ function Navbar() {
 
   return (
     <div className="  bg-zinc-900 flex justify-between items-center text-neutral-50 px-6 py-3">
-      <h1 className="text-4xl font-bold">CodeWave</h1>
+      <h1 className="text-md sm:text-lg md:text-xl lg:text-3xl font-bold">
+        CodeWave
+      </h1>
 
-      <div className="space-x-5 flex items-center mr-3 ">
+      <div className="space-x-3 sm:space-x-5 flex items-center mr-3 ">
         <ToastContainer />
-        <span className="text-sm text-zinc-300">Room: {roomId}</span>
+        <span className="text-xs sm:text-xs md:text-sm text-zinc-300">
+          Room: {roomId}
+        </span>
 
         <div
           onClick={handleCopy}
-          className="flex items-center gap-3 outline-none border-none bg-stone-300 text-stone-900 px-3 py-2 rounded-lg hover:cursor-pointer  hover:bg-stone-400 text-sm z-10"
+          className="flex items-center gap-3 outline-none border-none bg-stone-300 text-stone-900 px-3 py-2 rounded-lg hover:cursor-pointer  hover:bg-stone-400 text-xs"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -87,11 +91,11 @@ function Navbar() {
             />
           </svg>
 
-          <span>Copy Room ID</span>
+          <span className="hidden md:block">Copy Room ID</span>
         </div>
         <div
           onClick={handleLeave}
-          className="flex items-center text-sm gap-3 outline-none border-none bg-red-500 px-3 py-2 rounded-lg hover:bg-red-600 hover:cursor-pointer"
+          className="flex items-center text-xs gap-3 outline-none border-none bg-red-500 px-3 py-2 rounded-lg hover:bg-red-600 hover:cursor-pointer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +112,7 @@ function Navbar() {
             />
           </svg>
 
-          <span>Leave Room</span>
+          <span className="hidden md:block">Leave Room</span>
         </div>
       </div>
     </div>
