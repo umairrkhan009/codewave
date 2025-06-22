@@ -1,7 +1,11 @@
-import Avatar from "boring-avatars";
+/* global process */
+
 import express from "express";
 import http from "http";
 import { Server } from "socket.io";
+import dotenv from "dotenv";
+dotenv.config();
+const port = process.env.PORT || 9000;
 
 const app = express();
 const server = http.createServer(app);
@@ -11,7 +15,6 @@ const io = new Server(server, {
     methods: ["GET", "POST"],
   },
 });
-const port = 9000;
 const roomUsers = {};
 
 function removeUser(socket) {
@@ -78,4 +81,4 @@ io.on("connection", (socket) => {
 
 app.use(express.static("public"));
 
-server.listen(port, () => `Server is listening to ${port}`);
+server.listen(port, () => console.log(`Server is listening to ${port}`));
